@@ -23,6 +23,12 @@ console.log("Destructured Name:", name);
 console.log("Destructured Courses:", courses);
 
 let scores = [7, 65, 23, 76];
-let [score1, score4] = scores;
+let [score1, score2] = scores;
 console.log("First Score:", score1);
-console.log("Second Score:", score4);
+console.log("Second Score:", score2);
+
+let clonedStudent = { ...student, graduationYear: 2028 };
+console.log("Cloned Student:", clonedStudent);
+let additionalCourses = ["Writing Skills", "Algorithms"];
+let mergedCourses = [...student.courses, ...additionalCourses];
+console.log("Merged Courses:", mergedCourses);
