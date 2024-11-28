@@ -21,3 +21,8 @@ console.log("Are the objects equal?", JSON.stringify(student) === JSON.stringify
 let { name, courses } = student;
 console.log("Destructured Name:", name);
 console.log("Destructured Courses:", courses);
+
+let scores = [7, 65, 23, 76];
+let [score1, score4] = scores;
+console.log("First Score:", score1);
+console.log("Second Score:", score4);
