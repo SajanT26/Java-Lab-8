@@ -32,3 +32,10 @@ console.log("Cloned Student:", clonedStudent);
 let additionalCourses = ["Writing Skills", "Algorithms"];
 let mergedCourses = [...student.courses, ...additionalCourses];
 console.log("Merged Courses:", mergedCourses);
+
+student.addCourse = function (newCourse) {
+    this.courses.push(newCourse);
+  };
+student.totalCourses = function () {
+    return this.courses.length;
+  };
