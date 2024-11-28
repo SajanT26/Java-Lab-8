@@ -39,3 +39,7 @@ student.addCourse = function (newCourse) {
 student.totalCourses = function () {
     return this.courses.length;
   };
+
+student.addCourse("Game design");
+console.log("Number of courses including new one:", student.courses);
+console.log("Total Courses:", student.totalCourses());
