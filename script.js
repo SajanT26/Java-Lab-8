@@ -17,3 +17,7 @@ console.log("JSON String:", studentJSON);
 let StudentObject = JSON.parse(studentJSON);
 console.log("Student Object:", StudentObject);
 console.log("Are the objects equal?", JSON.stringify(student) === JSON.stringify(StudentObject));
+
+let { name, courses } = student;
+console.log("Destructured Name:", name);
+console.log("Destructured Courses:", courses);
